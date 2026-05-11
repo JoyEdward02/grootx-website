@@ -1,0 +1,140 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme - Modern Digital Marketing Agency
+   * tailwind.config.ts expects HSL format for colors.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 10% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 10% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 10% 12%;
+
+    --primary: 210 10% 12%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 39 97% 50%;
+    --secondary-foreground: 210 10% 12%;
+
+    --muted: 210 10% 90%;
+    --muted-foreground: 210 10% 40%;
+
+    --accent: 39 97% 50%;
+    --accent-foreground: 210 10% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 10% 90%;
+    --input: 210 10% 95%;
+    --ring: 39 97% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 10% 12%;
+    --foreground: 210 10% 95%;
+
+    --card: 210 12% 18%;
+    --card-foreground: 210 10% 95%;
+
+    --popover: 210 12% 18%;
+    --popover-foreground: 210 10% 95%;
+
+    --primary: 210 10% 95%;
+    --primary-foreground: 210 10% 12%;
+
+    --secondary: 39 97% 55%;
+    --secondary-foreground: 210 10% 12%;
+
+    --muted: 210 12% 40%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 39 97% 55%;
+    --accent-foreground: 210 10% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 12% 25%;
+    --input: 210 12% 22%;
+    --ring: 39 97% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+/* Smooth scrolling and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility classes for design */
+@layer components {
+  .grad-gold {
+    @apply bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400;
+  }
+
+  .grad-dark {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
+  }
+
+  .fade-in {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .smooth-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+}
