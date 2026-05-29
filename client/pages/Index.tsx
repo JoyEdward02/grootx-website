@@ -267,7 +267,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold tracking-wider">
-            Groot<span className="text-amber-500">X</span>Media
+            <span className="text-amber-500">Groot</span>x<span className="text-amber-500">Media</span>
           </div>
 
           {/* Desktop Menu */}
