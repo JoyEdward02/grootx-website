@@ -1024,7 +1024,7 @@ export default function Index() {
               PHONE / WHATSAPP
             </div>
             <div className="text-[14px] font-semibold text-slate-900">
-              +91 98765 43210
+              +91 7397794418
             </div>
           </div>
 
