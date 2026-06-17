@@ -853,6 +853,42 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Our Clients Section */}
+      <section className="py-20 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center mb-14 fade-in">
+            <div className="text-amber-500 text-sm font-semibold tracking-widest mb-3 uppercase">Trusted By</div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">
+              Our <span className="text-slate-300">Clients</span>
+            </h2>
+            <div className="w-16 h-1 bg-amber-500 mx-auto mt-5" />
+          </div>
+
+          {/* Client Logos Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {[
+              { name: "Decathlon", img: "/public/decathlon.png" },
+              { name: "Luxe Walls", img: "/public/luxewalls.png" },
+              { name: "Aria", img: "/public/aria.png" },
+              { name: "Car Castle", img: "/public/carcastle.png" },
+            ].map((client) => (
+              <div
+                key={client.name}
+                className="fade-in group flex items-center justify-center w-full p-6 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
+                style={{ minHeight: "120px" }}
+              >
+                <img
+                  src={client.img}
+                  alt={client.name}
+                  className="max-h-16 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Team Section */}
       <style>{`
         @keyframes spin-ring {
