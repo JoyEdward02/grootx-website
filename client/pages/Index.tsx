@@ -868,20 +868,20 @@ export default function Index() {
           {/* Client Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
             {[
-              { name: "Decathlon", img: "/team/decathlon.png" },
-              { name: "Luxe Walls", img: "/team/luxewalls.png" },
-              { name: "Aria", img: "/team/aria.png" },
-              { name: "Car Castle", img: "/team/carcastle.png" },
+              { name: "Decathlon", img: "/clients/decathlon.png" },
+              { name: "Luxe Walls", img: "/clients/luxewalls.png" },
+              { name: "Aria", img: "/clients/aria.png" },
+              { name: "Car Castle", img: "/clients/carcastle.png" },
             ].map((client) => (
               <div
                 key={client.name}
-                className="fade-in group flex items-center justify-center w-full p-6 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
-                style={{ minHeight: "120px" }}
+                className="fade-in group flex items-center justify-center w-full p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
+                style={{ minHeight: "160px" }}
               >
                 <img
                   src={client.img}
                   alt={client.name}
-                  className="max-h-16 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                  className="max-h-28 max-w-full object-contain transition-all duration-300"
                 />
               </div>
             ))}
