@@ -272,7 +272,7 @@ export default function Index() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
-            {["Home", "About", "Services", "Team", "Our Work", "Contact"].map(
+            {["Home", "About", "Services", "Team", "Our Work","Our Clients","Contact"].map(
               (item) => (
                 <a
                   key={item}
@@ -854,7 +854,7 @@ export default function Index() {
       </section>
 
       {/* Our Clients Section */}
-      <section className="py-20 bg-white border-t border-slate-100">
+      <section id="our clients" className="py-12 md:py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-14 fade-in">
