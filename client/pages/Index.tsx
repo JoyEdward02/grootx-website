@@ -868,10 +868,10 @@ export default function Index() {
           {/* Client Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
             {[
-              { name: "Decathlon", img: "/clients/decathlon.png" },
-              { name: "Luxe Walls", img: "/clients/luxewalls.png" },
-              { name: "Aria", img: "/clients/aria.png" },
-              { name: "Car Castle", img: "/clients/carcastle.png" },
+              { name: "Decathlon", img: "/team/decathlon.png" },
+              { name: "Luxe Walls", img: "/team/luxewalls.png" },
+              { name: "Aria", img: "/team/aria.png" },
+              { name: "Car Castle", img: "/team/carcastle.png" },
             ].map((client) => (
               <div
                 key={client.name}
