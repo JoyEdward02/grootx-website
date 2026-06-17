@@ -243,6 +243,29 @@ export default function Index() {
     const successMsg = form.querySelector(".cf-success") as HTMLDivElement;
     if (btn) btn.textContent = "Sending...";
     if (btn) btn.disabled = true;
+
+    const inputs = form.querySelectorAll("input, select, textarea");
+    const fullName     = (inputs[0] as HTMLInputElement).value;
+    const email        = (inputs[1] as HTMLInputElement).value;
+    const phone        = (inputs[2] as HTMLInputElement).value;
+    const business     = (inputs[3] as HTMLInputElement).value;
+    const service      = (inputs[4] as HTMLSelectElement).value;
+    const industry     = (inputs[5] as HTMLSelectElement).value;
+    const message      = (inputs[6] as HTMLTextAreaElement).value;
+
+    const waText = encodeURIComponent(
+      `*New Enquiry – GrootXMedia*\n\n` +
+      `*Full Name:* ${fullName}\n` +
+      `*Email:* ${email}\n` +
+      `*Phone:* ${phone || "—"}\n` +
+      `*Business:* ${business || "—"}\n` +
+      `*Service:* ${service || "—"}\n` +
+      `*Industry:* ${industry || "—"}\n\n` +
+      `*Message:*\n${message}`
+    );
+
+    window.open(`https://wa.me/919360282945?text=${waText}`, "_blank");
+
     setTimeout(() => {
       if (successMsg) successMsg.style.display = "block";
       if (btn) btn.textContent = "Send Enquiry →";
