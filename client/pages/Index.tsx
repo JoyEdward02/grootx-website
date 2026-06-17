@@ -1204,7 +1204,7 @@ export default function Index() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 text-amber-400">📞</span>
-                <a href="tel:+919876543210" className="hover:text-amber-400 transition-colors">+91 98765 43210</a>
+                <a href="tel:+917397794418" className="hover:text-amber-400 transition-colors">+91 7397794418</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 text-amber-400">✉️</span>
@@ -1212,7 +1212,7 @@ export default function Index() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 text-amber-400">💬</span>
-                <a href="https://wa.me/919876543210" className="hover:text-amber-400 transition-colors">+91 98765 43210</a>
+                <a href="https://wa.me/7397794418" className="hover:text-amber-400 transition-colors">+91 73977 94418</a>
               </li>
             </ul>
           </div>
@@ -1272,7 +1272,7 @@ export default function Index() {
 
         {/* WhatsApp — green background, white icon */}
         <a
-          href="https://wa.me/919876543210"
+          href="https://wa.me/7397794418"
           target="_blank"
           rel="noopener noreferrer"
           title="Chat on WhatsApp"
