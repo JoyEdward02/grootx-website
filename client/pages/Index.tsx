@@ -881,7 +881,7 @@ export default function Index() {
                 <img
                   src={client.img}
                   alt={client.name}
-                  className="max-h-28 max-w-full object-contain transition-all duration-300"
+                  className="max-h-36 max-w-full object-contain transition-all duration-300"
                 />
               </div>
             ))}
