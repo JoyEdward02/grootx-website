@@ -866,7 +866,7 @@ export default function Index() {
           </div>
 
           {/* Client Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
             {[
               { name: "Decathlon", img: "/team/decathlon.png" },
               { name: "Luxe Walls", img: "/team/luxewalls.png" },
