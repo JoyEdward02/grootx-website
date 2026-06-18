@@ -1121,7 +1121,9 @@ export default function Index() {
             <Youtube size={18} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/saravanan-loganathan-677a00417/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-colors"
           >
             <Linkedin size={18} />
