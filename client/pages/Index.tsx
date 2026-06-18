@@ -872,6 +872,7 @@ export default function Index() {
               { name: "Luxe Walls", img: "/team/luxewalls.png" },
               { name: "Aria", img: "/team/aria.png" },
               { name: "Car Castle", img: "/team/carcastle.png" },
+              { name: "Best Cars", img: "/team/bestcars.png" },
             ].map((client) => (
               <div
                 key={client.name}
