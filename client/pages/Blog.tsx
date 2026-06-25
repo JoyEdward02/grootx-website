@@ -22,7 +22,7 @@ const blogs = [
       },
       {
         type: "image",
-        src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=900&q=80",
+        src: "https://cdn.pixabay.com/photo/2016/11/29/06/17/laptop-1869657_1280.jpg",
         alt: "Professional website design on a laptop",
         caption: "A professional website is the cornerstone of your digital presence.",
       },
