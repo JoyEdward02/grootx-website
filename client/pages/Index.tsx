@@ -283,7 +283,12 @@ export default function Index() {
                 </a>
               ),
             )}
-            
+            <a
+              href="/blog"
+              className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide"
+            >
+              Blog
+            </a>
           </div>
 
           {/* Desktop Button */}
