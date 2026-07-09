@@ -901,6 +901,7 @@ export default function Index() {
               { name: "Car Castle", img: "/team/carcastle.png" },
               { name: "Best Cars", img: "/team/bestcars.png" },
               { name: "Lingo cars", img: "/team/lingocars.jpeg" },
+              { name: "On Time", img: "/team/On_Time.png" },
             ].map((client) => (
               <div
                 key={client.name}
