@@ -362,7 +362,7 @@ export default function Index() {
 {/* Hero Section */}
 <section
   id="home"
-  className="pt-12 pb-36 bg-slate-950 relative overflow-hidden rounded-br-[180px] md:pt-14 md:pb-40 md:rounded-br-[260px]"
+  className="pt-8 pb-16 bg-slate-950 relative overflow-hidden rounded-br-[100px] md:pt-14 md:pb-40 md:rounded-br-[260px]"
 >
   <div className="absolute inset-0">
     <img
@@ -390,11 +390,11 @@ export default function Index() {
   {/* Content */}
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
-      <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white mb-3 md:mb-6">
         Lets Grow Together
       </h1>
 
-      <p className="text-lg text-slate-200 leading-relaxed mb-8 max-w-xl">
+      <p className="text-base md:text-lg text-slate-200 leading-relaxed mb-5 md:mb-8 max-w-xl">
        Grow your business with data-driven digital marketing strategies.
        We help you reach the right audience, increase engagement, and drive conversions.
        From SEO to paid ads, we deliver results that scale your brand.
@@ -402,7 +402,7 @@ export default function Index() {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col items-start sm:flex-row gap-3 md:gap-4">
 
         {/* Get a Quote → Contact Section */}
         <a
@@ -429,7 +429,7 @@ export default function Index() {
   {/* CURVED BOTTOM */}
   <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
     <svg
-      className="relative block w-[calc(100%+1.3px)] h-[280px]"
+      className="relative block w-[calc(100%+1.3px)] h-[140px] md:h-[280px]"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 280"
       preserveAspectRatio="none"
@@ -644,6 +644,28 @@ export default function Index() {
   .service-card:hover .service-arch {
     background: #0f172a;
   }
+  @media (max-width: 640px) {
+    .service-arch {
+      width: 60px;
+      height: 60px;
+      top: -30px;
+    }
+    .service-icon-wrap {
+      width: 48px;
+      height: 48px;
+    }
+    .service-icon-wrap svg {
+      width: 20px;
+      height: 20px;
+    }
+    .service-title {
+      font-size: 0.92rem;
+    }
+    .service-desc {
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+  }
 `}</style>
 
 <section id="services" className="services-bg py-12 md:py-20 px-4">
@@ -665,7 +687,7 @@ export default function Index() {
   <div className="max-w-7xl mx-auto relative z-10">
 
     {/* Heading */}
-    <div className="mb-16 fade-in text-center">
+    <div className="mb-8 md:mb-16 fade-in text-center">
       <div className="text-amber-500 text-sm font-semibold tracking-widest mb-3">WHAT WE OFFER</div>
       <h2 className="text-4xl md:text-6xl font-bold mb-4 text-slate-900">
         OUR <span className="text-slate-300">SERVICES</span>
@@ -676,7 +698,7 @@ export default function Index() {
     </div>
 
     {/* Service Cards — 4 in a row, 2 rows */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-8 md:mt-16">
       {services.map((service, i) => {
         const icons = [
           <svg key="sm" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>,
@@ -689,7 +711,7 @@ export default function Index() {
           <svg key="vd" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>,
         ];
         return (
-          <div key={i} className="service-card relative pt-16 pb-8 px-5 text-center mt-10" style={{minHeight: "300px"}}>
+          <div key={i} className="service-card relative pt-10 pb-5 px-3 text-center mt-8 min-h-[220px] md:pt-16 md:pb-8 md:px-5 md:mt-10 md:min-h-[300px]">
             {/* Arch bump at top */}
             <div className="service-arch">
               <div className="service-icon-wrap">
@@ -770,7 +792,7 @@ export default function Index() {
       </div>
 
       {/* RIGHT: Two overlapping images — exact reference match */}
-      <div className="fade-in relative h-[420px] md:h-[500px]">
+      <div className="hidden md:block fade-in relative h-[420px] md:h-[500px]">
 
         {/* Gray rounded bg card — sits bottom-right, slightly inset */}
         <div className="absolute bottom-0 right-0 w-[86%] h-[88%] rounded-[2rem] overflow-hidden bg-slate-100">
@@ -871,7 +893,7 @@ export default function Index() {
           </div>
 
           {/* Client Logos Grid */}
-         <div className="flex flex-wrap justify-center gap-6">
+         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {[
               { name: "Decathlon", img: "/team/decathlon.png" },
               { name: "Luxe Walls", img: "/team/luxewalls.png" },
@@ -882,13 +904,12 @@ export default function Index() {
             ].map((client) => (
               <div
                 key={client.name}
-                className="fade-in group flex items-center justify-center w-72 p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
-                style={{ minHeight: "160px" }}
+                className="fade-in group flex items-center justify-center w-[calc(50%-0.5rem)] p-6 md:w-72 md:p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white min-h-[140px] md:min-h-[160px]"
               >
                 <img
                   src={client.img}
                   alt={client.name}
-                  className="max-h-36 max-w-full object-contain transition-all duration-300"
+                  className="max-h-24 md:max-h-36 max-w-full object-contain transition-all duration-300"
                 />
               </div>
             ))}
@@ -916,11 +937,11 @@ export default function Index() {
 
       <section id="team" className="relative overflow-hidden">
         {/* White top: heading area */}
-        <div className="bg-white text-center px-6 pt-12 md:pt-20 pb-24 md:pb-40">
+        <div className="bg-white text-center px-6 pt-12 md:pt-20 pb-14 md:pb-40">
           <div className="text-amber-500 text-sm font-semibold tracking-widest mb-4 fade-in">
             THE PEOPLE BEHIND GrootXMedia
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 fade-in">
+          <h2 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6 fade-in">
             OUR <span className="text-slate-300">TEAM</span>
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto fade-in">
@@ -929,7 +950,7 @@ export default function Index() {
         </div>
 
         {/* Slate-900 bottom: cards overlap the boundary */}
-        <div className="bg-slate-600 pb-10 md:pb-20">
+        <div className="bg-slate-600 pb-6 md:pb-20">
           {/* Desktop: 5 in a row */}
           <div className="max-w-6xl mx-auto px-6 -mt-28 hidden md:grid md:grid-cols-5 gap-6">
             {teamMembers.map((member, i) => (
@@ -981,7 +1002,7 @@ export default function Index() {
           </div>
 
           {/* Mobile: 2 columns grid */}
-          <div className="md:hidden max-w-sm mx-auto px-6 -mt-24 grid grid-cols-2 gap-x-6 gap-y-10">
+          <div className="md:hidden max-w-sm mx-auto px-6 -mt-16 grid grid-cols-2 gap-x-6 gap-y-6">
             {teamMembers.map((member, i) => (
               <div
                 key={i}
@@ -990,7 +1011,7 @@ export default function Index() {
                 }`}
               >
                 {/* Photo + blob wrapper */}
-                <div className="team-img-wrap relative w-28 h-28 mb-4">
+                <div className="team-img-wrap relative w-28 h-28 mb-3">
                   <div
                     className="absolute w-24 h-24 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6"
                     style={{ backgroundColor: member.blobColor, ...member.blobStyle }}
@@ -1049,11 +1070,11 @@ export default function Index() {
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-2 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
 
           {/* Email */}
           <div>
-            <div className="text-[16px] font-semibold text-amber-500 tracking-widest mb-2">
+            <div className="text-[15px] font-semibold text-amber-500 tracking-widest mb-2">
               EMAIL
             </div>
             <div className="text-[14px] font-semibold text-slate-900">
@@ -1263,7 +1284,7 @@ export default function Index() {
           </div>
 
           {/* Col 3: Our Services */}
-          <div>
+          <div className="hidden sm:block">
             <h3 className="text-amber-500 text-lg font-extrabold uppercase tracking-widest mb-5">Our Services</h3>
             <ul className="space-y-3 text-sm text-slate-300">
               {["Social Media Management", "Lead Generation", "Paid Advertising", "SEO & Content", "Brand Identity", "Website Development"].map((s) => (
@@ -1275,7 +1296,7 @@ export default function Index() {
           </div>
 
           {/* Col 4: Resources */}
-          <div>
+          <div className="hidden sm:block">
             <h3 className="text-amber-500 text-lg font-extrabold uppercase tracking-widest mb-5">Resources</h3>
             <ul className="space-y-3 text-sm text-slate-300">
               {["News", "Media Coverage", "Guest Post", "Blog", "Case Studies", "Careers"].map((r) => (

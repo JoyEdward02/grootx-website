@@ -22,7 +22,7 @@ const blogs = [
       },
       {
         type: "image",
-        src: "https://cdn.pixabay.com/photo/2016/11/29/06/17/laptop-1869657_1280.jpg",
+        src: "https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_1280.jpg",
         alt: "Professional website design on a laptop",
         caption: "A professional website is the cornerstone of your digital presence.",
       },
@@ -532,14 +532,14 @@ export default function Blog() {
     return (
       <>
         {/* Minimal Nav */}
-        <nav className="bg-white border-b border-slate-200 px-6 py-4 sticky top-0 z-50 shadow-sm">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="/" className="text-2xl font-bold tracking-wider">
+        <nav className="bg-white border-b border-slate-200 px-4 sm:px-6 py-4 sticky top-0 z-50 shadow-sm">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+            <a href="/" className="text-lg sm:text-2xl font-bold tracking-wider shrink-0">
               <span className="text-amber-500">Groot</span>x<span className="text-amber-500">Media</span>
             </a>
-            <div className="flex gap-6">
-              <a href="/" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide">Home</a>
-              <a href="/blog" onClick={(e) => { e.preventDefault(); setActiveBlog(null); }} className="text-sm font-semibold text-amber-500 uppercase tracking-wide">Blog</a>
+            <div className="flex gap-3 sm:gap-6">
+              <a href="/" className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide whitespace-nowrap">Home</a>
+              <a href="/blog" onClick={(e) => { e.preventDefault(); setActiveBlog(null); }} className="text-xs sm:text-sm font-semibold text-amber-500 uppercase tracking-wide whitespace-nowrap">Blog</a>
             </div>
           </div>
         </nav>
@@ -554,19 +554,19 @@ export default function Blog() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
       {/* Nav */}
-      <nav className="bg-white border-b border-slate-200 px-6 py-4 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="/" className="text-2xl font-bold tracking-wider">
+      <nav className="bg-white border-b border-slate-200 px-4 sm:px-6 py-4 sticky top-0 z-50 shadow-sm">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          <a href="/" className="text-lg sm:text-2xl font-bold tracking-wider shrink-0">
             <span className="text-amber-500">Groot</span>x<span className="text-amber-500">Media</span>
           </a>
-          <div className="flex gap-6">
-            <a href="/" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide">Home</a>
-            <a href="/#services" className="text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide">Services</a>
-            <a href="/blog" className="text-sm font-semibold text-amber-500 uppercase tracking-wide border-b-2 border-amber-500">Blog</a>
+          <div className="flex gap-3 sm:gap-6">
+            <a href="/" className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide whitespace-nowrap">Home</a>
+            <a href="/#services" className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-amber-500 transition-colors uppercase tracking-wide whitespace-nowrap">Services</a>
+            <a href="/blog" className="text-xs sm:text-sm font-semibold text-amber-500 uppercase tracking-wide border-b-2 border-amber-500 whitespace-nowrap">Blog</a>
           </div>
           <a
             href="/#contact"
-            className="hidden md:block px-6 py-2 bg-slate-900 text-white text-sm font-semibold hover:bg-amber-500 transition-colors uppercase tracking-wide"
+            className="hidden md:block px-6 py-2 bg-slate-900 text-white text-sm font-semibold hover:bg-amber-500 transition-colors uppercase tracking-wide shrink-0"
           >
             Get Started
           </a>
@@ -574,7 +574,7 @@ export default function Blog() {
       </nav>
 
       {/* Hero */}
-      <section className="bg-slate-950 text-white py-20 px-6 relative overflow-hidden">
+      <section className="bg-slate-950 text-white py-12 md:py-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://cdn.pixabay.com/photo/2018/09/04/10/27/never-stop-learning-3653430_1280.jpg"
