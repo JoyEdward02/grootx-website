@@ -828,7 +828,7 @@ export default function Index() {
 
       <section id="our work" className="py-12 md:py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6">
 
             {/* Card 1 — Projects */}
             <div
@@ -872,7 +872,7 @@ export default function Index() {
                 href="#contact"
                 className="cta-pill z-10 px-8 py-3.5 bg-amber-500 text-white font-bold text-sm uppercase tracking-widest rounded-full hover:bg-amber-400 transition-colors duration-300 shadow-lg"
               >
-                KICKSTART YOUR PROJECT →
+                KICKSTART YOUR PROJECT 
               </a>
             </div>
 
