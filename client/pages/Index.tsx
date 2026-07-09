@@ -871,7 +871,7 @@ export default function Index() {
           </div>
 
           {/* Client Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+         <div className="flex flex-wrap justify-center gap-6">
             {[
               { name: "Decathlon", img: "/team/decathlon.png" },
               { name: "Luxe Walls", img: "/team/luxewalls.png" },
@@ -882,7 +882,7 @@ export default function Index() {
             ].map((client) => (
               <div
                 key={client.name}
-                className="fade-in group flex items-center justify-center w-full p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
+                className="fade-in group flex items-center justify-center w-72 p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white"
                 style={{ minHeight: "160px" }}
               >
                 <img
