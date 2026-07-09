@@ -1128,10 +1128,12 @@ export default function Index() {
     <Instagram size={18} />
   </a>
 
-          <a
-            href="#"
-            className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-colors"
-          >
+  <a
+    href="https://www.facebook.com/profile.php?id=61590368738452&ref=PROFILE_EDIT_xav_ig_profile_page_web#"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-colors"
+  >
             <Facebook size={18} />
           </a>
 
