@@ -828,21 +828,21 @@ export default function Index() {
 
       <section id="our work" className="py-12 md:py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
             {/* Card 1 — Projects */}
             <div
-              className="cta-card-left cta-shimmer rounded-2xl p-10 md:p-14 flex flex-col items-start text-left relative overflow-hidden"
+              className="cta-card-left cta-shimmer rounded-2xl p-6 md:p-14 flex flex-col items-start text-left relative overflow-hidden"
               style={{ background: "linear-gradient(145deg, #1e293b 0%, #0f172a 50%, #1e3a2f 100%)" }}
             >
               <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-36 h-36 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
 
-              <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-3 leading-tight z-10">
+              <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-2 md:mb-3 leading-tight z-10">
                 Projects That Speak for Us
               </h3>
-              <span className="cta-u h-[3px] bg-amber-400 rounded-full mb-6 z-10" />
-              <p className="text-slate-400 text-base leading-relaxed mb-10 z-10">
+              <span className="cta-u h-[3px] bg-amber-400 rounded-full mb-4 md:mb-6 z-10" />
+              <p className="text-slate-400 text-base leading-relaxed mb-6 md:mb-10 z-10">
                 Take a look at some of our recent projects and see how we help businesses grow online with smart digital solutions.
               </p>
               <a
@@ -855,17 +855,17 @@ export default function Index() {
 
             {/* Card 2 — Start Your Success */}
             <div
-              className="cta-card-right cta-shimmer rounded-2xl p-10 md:p-14 flex flex-col items-start text-left relative overflow-hidden"
+              className="cta-card-right cta-shimmer rounded-2xl p-6 md:p-14 flex flex-col items-start text-left relative overflow-hidden"
               style={{ background: "linear-gradient(145deg, #1e293b 0%, #0f172a 50%, #2d1e3a 100%)" }}
             >
               <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/10 rounded-full blur-3xl pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
 
-              <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-3 leading-tight z-10">
+              <h3 className="text-white text-3xl md:text-4xl font-extrabold mb-2 md:mb-3 leading-tight z-10">
                 Start Your Success Story
               </h3>
-              <span className="cta-u h-[3px] bg-amber-400 rounded-full mb-6 z-10" />
-              <p className="text-slate-400 text-base leading-relaxed mb-10 z-10">
+              <span className="cta-u h-[3px] bg-amber-400 rounded-full mb-4 md:mb-6 z-10" />
+              <p className="text-slate-400 text-base leading-relaxed mb-6 md:mb-10 z-10">
                 Your business deserves smart solutions that work. Let's create something amazing together.
               </p>
               <a
@@ -904,12 +904,12 @@ export default function Index() {
             ].map((client) => (
               <div
                 key={client.name}
-                className="fade-in group flex items-center justify-center w-[calc(50%-0.5rem)] p-6 md:w-72 md:p-8 border border-slate-100 hover:border-amber-400 hover:shadow-lg transition-all duration-300 bg-white min-h-[140px] md:min-h-[160px]"
+                className="fade-in group flex items-center justify-center w-[calc(50%-0.5rem)] aspect-square p-2 md:w-72 md:aspect-auto md:p-8 border-0 md:border md:border-slate-100 md:hover:border-amber-400 md:hover:shadow-lg transition-all duration-300 bg-transparent md:bg-white md:min-h-[160px] overflow-hidden"
               >
                 <img
                   src={client.img}
                   alt={client.name}
-                  className="max-h-24 md:max-h-36 max-w-full object-contain transition-all duration-300"
+                  className="w-full h-full object-cover md:w-auto md:h-auto md:max-h-36 md:max-w-full md:object-contain transition-all duration-300"
                 />
               </div>
             ))}
@@ -1128,12 +1128,10 @@ export default function Index() {
     <Instagram size={18} />
   </a>
 
-  <a
-    href="https://www.facebook.com/profile.php?id=61590368738452&ref=PROFILE_EDIT_xav_ig_profile_page_web#"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-colors"
-  >
+          <a
+            href="#"
+            className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white transition-colors"
+          >
             <Facebook size={18} />
           </a>
 
