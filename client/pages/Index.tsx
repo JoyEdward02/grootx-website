@@ -195,7 +195,7 @@ export default function Index() {
     {
       name: "Yasar Arafath",
       role: "Marketing Strategist",
-      img: "/team/yasar.png",
+      img: "/team/yasar.jpeg",
       blobColor: "#f59e0b",
       blobStyle: { borderRadius: "42% 58% 35% 65% / 50% 60% 40% 50%", bottom: "-10px", right: "-10px" },
     },
@@ -220,6 +220,8 @@ export default function Index() {
       blobColor: "#b1d270",
       blobStyle: { borderRadius: "50% 50% 42% 58% / 48% 52% 48% 52%", bottom: "-8px", left: "-12px" },
     },
+
+
     
   ];
 
