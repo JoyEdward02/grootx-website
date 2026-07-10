@@ -882,7 +882,7 @@ export default function Index() {
 
       {/* Our Clients Section */}
       <section id="our clients" className="py-12 md:py-20 px-6 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-3">
           {/* Header */}
           <div className="text-center mb-14 fade-in">
             <div className="text-amber-500 text-sm font-semibold tracking-widest mb-3 uppercase">Trusted By</div>
@@ -905,12 +905,12 @@ export default function Index() {
             ].map((client) => (
               <div
                 key={client.name}
-                className="fade-in group flex items-center justify-center w-[calc(50%-0.5rem)] aspect-square p-2 md:w-72 md:aspect-auto md:p-8 border-0 md:border md:border-slate-100 md:hover:border-amber-400 md:hover:shadow-lg transition-all duration-300 bg-transparent md:bg-white md:min-h-[160px] overflow-hidden"
+                className="fade-in group flex items-center justify-center w-[calc(50%-0.5rem)] aspect-square p-2 md:w-[calc(25%-1.125rem)] md:aspect-square md:p-8 border-0 transition-all duration-300 bg-transparent overflow-hidden"
               >
                 <img
                   src={client.img}
                   alt={client.name}
-                  className="w-full h-full object-cover md:w-auto md:h-auto md:max-h-36 md:max-w-full md:object-contain transition-all duration-300"
+                  className="w-full h-full object-cover transition-all duration-300"
                 />
               </div>
             ))}
